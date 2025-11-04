@@ -43,35 +43,6 @@ An **admin dashboard** is also included to manage users and check orders — all
 
 ---
 
-## 📁 Project Structure
-
-
- - E-commerce-Website/
-   │
- - ├── admin/
-   │ ├── index.html
-   │ ├── users.html
-   │ └── orders.html
-   │
- - ├── css/
-   │ └── style.css
-   │
- - ├── js/
-   │ ├── app.js
-   │ ├── login.js
-   │ ├── register.js
-   │ └── admin.js
-   │
- - ├── images/
-   │ └── (product images)
-   │
- - ├── index.html
- - ├── login.html
- - ├── register.html
- - ├── checkout.html
- - ├── success.html
- - └── README.md`
-
 ## 💡 Author
 
 **Haytam Nefal**  
