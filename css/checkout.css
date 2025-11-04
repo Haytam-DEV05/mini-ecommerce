@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 10px;
+}
+
+/* ---------------- CHECKOUT SECTION ---------------- */
+.checkout {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.checkout h1 {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* ---------------- CART TABLE ---------------- */
+.cart-items {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #4f46e5;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+tbody td {
+  padding: 12px;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+tbody img {
+  border-radius: 8px;
+}
+
+/* ---------------- ORDER SUMMARY ---------------- */
+.order-summary {
+  background: #f9fafb;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.order-summary h2 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+
+/* ---------------- TOTAL ---------------- */
+.total {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #4f46e5;
+}
+
+/* ---------------- BUTTON ---------------- */
+button[type="submit"] {
+  width: 100%;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #3730a3;
+}
+
+/* ---------------- EMPTY CART ---------------- */
+tbody td[colspan="4"] {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  padding: 30px 0;
+}
+
+/* ---------------- ANIMATION ---------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary {
+    order: -1;
+  }
+}

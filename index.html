@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK : CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTAWESOME : CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo"><span>E</span>commerce</h2>
+      <nav>
+        <div class="icon-shop">
+          <i class="fa-solid fa-basket-shopping shopping-icon"></i>
+          <p class="length-Product active">0</p>
+        </div>
+        <div class="logout">
+          <button class="btn btn-logout">loGout</button>
+        </div>
+      </nav>
+
+      <!-- CART-SHOP -->
+      <div class="cart">
+        <div class="top-cart">
+          <h1 class="cart-title">Shope</h1>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="products-cart"></div>
+
+        <div class="footer-cart">
+          <h2 class="total-price">
+            Total : <span class="total-cart">0.00DH</span>
+          </h2>
+          <button>checkOut</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="filter-products">
+        <button value="all">All</button>
+        <button value="men's clothing">men's clothing</button>
+        <button value="women's clothing">women's clothing</button>
+        <button value="jewelery">jewelery</button>
+        <button value="electronics">electronics</button>
+      </div>
+
+      <div class="box-products"></div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

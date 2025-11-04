@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------- Login Form ---------------- */
+.form-loging,
+.form-registration {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 370px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.8s ease;
+}
+
+.form-loging div,
+.form-registration div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input {
+  padding: 12px 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(101, 88, 245, 0.3);
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4c51bf;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(76, 81, 191, 0.3);
+}
+
+/* ---------------- Links ---------------- */
+a {
+  text-align: center;
+  color: #ffd369;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffde59;
+}
+
+.form-registration span {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* ---------------- Error Messages ---------------- */
+.error-username,
+.error-phone,
+.error-email,
+.error-password-strong {
+  color: #ff7b7b;
+  font-size: 12px;
+  margin-top: 3px;
+  display: none; /* ممكن تبينهم بالـ JS */
+}
+
+input.error {
+  border: 2px solid #ff4d4d;
+  background: rgba(255, 230, 230, 0.9);
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 480px) {
+  .form-loging,
+  .form-registration {
+    width: 90%;
+    padding: 30px 25px;
+  }
+}

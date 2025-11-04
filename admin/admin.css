@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+#logout {
+  background: #ef4444;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#logout:hover {
+  background: #b91c1c;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: #4f46e5;
+  color: #fff;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+table tr:hover {
+  background: #f3f4f6;
+}
+
+.delete-user {
+  background: #ef4444;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.delete-user:hover {
+  background: #b91c1c;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  body {
+    padding: 10px;
+  }
+
+  table th, table td {
+    padding: 8px 10px;
+  }
+}
